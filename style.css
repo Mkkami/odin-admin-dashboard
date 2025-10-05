@@ -6,6 +6,7 @@
     --alt-font: #F2F5F8;
     --background-color: #A9B7C9;
     --highlight-color: #4A90E2;
+    --hover-text: #2E3A4D;
     --top-padding: 1em;
     --left-padding: 2em;
     --transition-duration: 0.6s;
@@ -136,6 +137,17 @@ p.title {
     width: 5rem;
 }
 
+.bell:hover {
+    cursor: pointer;
+    animation: shake 0.4s;
+}
+@keyframes shake {
+    0% {transform: rotate(0deg); }
+    33% {transform: rotate(-5deg)}
+    66% {transform: rotate(5deg)}
+    100% {transform: rotate(0deg)}
+}
+
 .bottom .right {
     display: grid;
     grid-template-columns: repeat(3,120px);
@@ -153,6 +165,13 @@ p.title {
     border-radius: 32px;
     font-weight: bold;
     font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header button:hover {
+    color: var(--hover-text);
+    background-color: var(--background-color);
 }
 
 .left input {
@@ -212,7 +231,13 @@ p.title {
 }
 
 .card img {
-    margin-left: 1rem;    
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.4);
+    cursor: pointer;
 }
 
 .announcements>div,
