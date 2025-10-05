@@ -51,6 +51,7 @@ p.title {
     align-content: start;
     gap: 5em;
     background-color: var(--alt-color);
+    font-family: sans-serif;
 }
 
 .sidebar p {
@@ -156,8 +157,6 @@ p.title {
 }
 
 .header button {
-    /* width: 100px;
-    height: 36px; */
     text-align: center;
     background-color: var(--alt-color);
     color: white;
